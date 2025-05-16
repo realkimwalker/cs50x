@@ -1,0 +1,19 @@
+//prompt user to input positive integer 1-8
+
+do
+{
+    n = get_int("Positive Number: ");
+}
+while (n < 1 || n > 8);
+
+// print out hashes
+// print out new line
+for each row (initialization; condition; update)
+{
+    dots and dashes should be equal to number entered
+    print dots
+    print dashes
+    new line
+}
+repeat for j rows (equal to n)
+new line
