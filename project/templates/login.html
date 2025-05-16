@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <form action="/login" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <button type="submit">Log In</button>
+    </form>
+
+    <h1>Please Enter Your Name to Log In</h1>
+    <p>{{ message }}</p>
+    <img alt="cs50 Building" src="/static/cs50building.jpg" height="300" width="auto">
+{% endblock %}

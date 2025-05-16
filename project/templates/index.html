@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if name %}
+        You are logged in as {{ name }}. <a href="https://literate-invention-4rww5w7xpvp3j4gg-5000.app.github.dev/register">Log out</a>.
+        <a href="/register">
+            <button>Register</button>
+        </a>
+    {% else %}
+        You are not logged in. <a href="/login">Log in</a>.
+    {% endif %}
+
+    <h1>Welcome to my CS50 Final Project!</h1>
+        <img alt="Photo of Harvard Rhino" src="/static/cs50.jpg" height="300" width="auto">
+
+{% endblock %}

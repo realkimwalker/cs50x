@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>CS50 Final Project!</title>
+    </head>
+    <body>
+    <input autocomplete="off" autofocus placeholder="Query" type="text">
+
+    <ul></ul>
+
+    <script>
+
+    let input = document.querySelector('input');
+    input.addEventListener('input', async function() {
+        let response = await fetch('/search?q=' + input.value);
+        let registrants = await response.json();
+        let html = '';
+        for (let name in names) {
+            let registrants = registrants[id].name.replace('<', '&lt;').replace('&', '&amp;');
+            html += '<li>' + name + '</li>';
+        }
+        document.querySelector('ul').innerHTML = html;
+    });
+
+    </script>
+</body>

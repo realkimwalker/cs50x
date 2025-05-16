@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Error: Name and Sport Required for Registration</h1>
+    <p>{{ message }}</p>
+    <img alt="Bird in Street" src="/static/errorpic.jpg" height="300" width="auto" >
+    <div>
+        <tr><input type="button" value="Back" onclick="history.back(-1)"></tr>
+    </div>
+{% endblock %}

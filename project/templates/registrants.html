@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Success! You are registered.</h1>
+    <img alt="Photo of Harvard Rhino" src="/static/bridge.jpg" height="300" width="auto">
+
+    <h2>Registrants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Sport</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registrant in registrants %}
+                <tr>
+                    <td>{{ registrant.name }}</td>
+                    <td>{{ registrant.sport }}</td>
+                    <td>
+                        <form action="/deregister" method="post">
+                            <input name="id" type="hidden" value="{{ registrant.id }}">
+                            <button type="submit">Deregister</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <footer>
+        <form>
+            <tr><input type="button" value="Back" onclick="history.back(-1)"></tr>
+            <tr><a href="/logout">Log out</a></tr>
+
+        </form>
+    </footer>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>CS50 Final Project!</title>
+    </head>
+    <body>
+        <h1>To Register: Enter Name and Select Sport and Click Register</h1>
+        <p>{{ message }}</p>
+        <img alt="Stadium" src="/static/stadium.jpg" height="300" width="auto">
+        <form action="/register" method="post">
+            <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+            {% for sport in sports %}
+                <input name="sport" type="radio" value="{{ sport }}"> {{ sport }}
+            {% endfor %}
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
