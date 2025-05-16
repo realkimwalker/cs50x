@@ -1,0 +1,12 @@
+<!--FIrst line names the form I want to extend-->
+<!--Means that we inherit everything but block from layout.html-->
+{% extends "layout.html" %}
+
+<!--This is Jinja syntax for placeholding a whole block of code -->
+<!--The name of the block/end block is body because we are onside the body section of html tag-->
+{% block body %}
+
+    <!-- We added a small if else statement to handle no name entered default-->
+    hello, {% if name %}{{ name }}{% else %}world{% endif %}
+
+{% endblock %}

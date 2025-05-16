@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if name %}
+        You are logged in as {{ name }}. <a href="/logout">Log out</a>.
+    {% else %}
+        You are not logged in. <a href="/login">Log in</a>.
+    {% endif %}
+
+{% endblock %}
+
+
+{% block body %}
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        {% for sport in sports %}
+            <input name="sport" type="radio" value="{{ sport }}"> {{ sport }}
+        {% endfor %}
+        <button type="submit">Register</button>
+    </form>
+{% endblock %}
+

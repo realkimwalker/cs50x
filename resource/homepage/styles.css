@@ -1,0 +1,85 @@
+"mystyle.css"
+
+.centered
+{
+    text-align: center;
+}
+
+.large
+{
+    font-size: large;
+}
+
+.medium
+{
+    font-size: medium;
+}
+
+.small
+{
+    font-size: small;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.team {
+    background-color: #DC143C
+}
+
+#score1 {
+    color: #DC143C
+}
+
+#score2 {
+    color: #0F4D92
+}
+
+#add1 {
+    color: #DC143C
+}
+
+#add2 {
+    color: #0F4D92
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.team {
+    background-color: #DC143C
+}
+
+#score1 {
+    color: #DC143C
+}
+
+#score2 {
+    color: #0F4D92
+}
+
+#add1 {
+    color: #DC143C
+}
+
+#add2 {
+    color: #0F4D92
+}

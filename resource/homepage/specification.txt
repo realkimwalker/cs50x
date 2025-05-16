@@ -1,0 +1,21 @@
+10 HTML tags:
+<header>
+<main>
+<footer>
+<table>
+<thead>
+<tr>
+<td>
+<title>
+<p>
+<meta>
+
+CSS Properties:
+font text
+font size
+text allign
+color
+margin
+border
+#id
+.class
