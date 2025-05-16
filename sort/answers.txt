@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Smallest omega, or shortest amount of time on sorted order list
+
+sort2 uses: Merge Sort
+
+How do you know?: Takes the shortest amount of time on reserved order list
+
+sort3 uses: Selection Sort
+
+How do you know?: Took about same amount of time for reversed and sorted lists
