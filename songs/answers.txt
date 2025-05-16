@@ -1,0 +1,9 @@
+Based on the average of each metric, energy (0.659), valence (0.48), and danceability (0.71646),
+I would characterize this individual (if this were a single listener) as someone who enjoys
+dancing more so than happy songs or songs that have tempos compatible with faster beats per minute (such as
+cycling music, or cardio).
+
+I think that calculating the listener's aura of a listener based on the metrics of energy, valence, and danceability may
+not be representative of the listener because we don't know if the listener has been influenced by other events not
+measured in the database. I could also look more closely at methods of meaurement such as mode, to see if averages were
+skewed due to extremes or outliers.
